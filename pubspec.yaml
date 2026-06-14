@@ -1,0 +1,32 @@
+name: hit_api
+description: "Admin Simpadu - Project Tugas."
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  # Disesuaikan dengan sdks dart di pubspec.lock
+  sdk: ">=3.11.5 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Versi di bawah ini disesuaikan tepat dengan pubspec.lock
+  flutter_dotenv: 6.0.1
+  http: 1.6.0
+  provider: 6.1.5+1
+  shared_preferences: 2.5.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # Versi dev disesuaikan dengan pubspec.lock
+  flutter_lints: 6.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Pastikan file .env dan folder assets/images benar-benar ada di root proyek
+  assets:
+    - .env
+    - assets/images/logo.png
